@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacquemus</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Ajoutez ces styles CSS pour centrer l'image et la bannière */
+        .tab-content {
+            text-align: center;
+        }
+
+        .tab-content img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            margin-top: 20px; /* Ajout d'une marge au-dessus de l'image */
+        }
+
+        #home-banner {
+            background-color: #8B4513; /* Marron */
+            color: #fff; /* Blanc */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-images img {
+            max-width: 20%; /* Ajustez la largeur selon vos préférences */
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .tab-container {
+            text-align: center;
+        }
+
+        .tab-container button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #8B4513; /* Marron */
+            color: #fff; /* Blanc */
+            border: none;
+            cursor: pointer;
+        }
+
+        .tab-content p {
+            max-width: 80%;
+            margin: 20px auto;
+        }
+
+        /* Ajoutez ces styles pour la vidéo */
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* Rapport d'aspect 16:9 */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Ajoutez ces styles pour les nouvelles images de la section "collections" */
+        .new-images-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .new-images-container img {
+            max-width: 30%; /* Ajustez la largeur selon vos préférences */
+            margin: 10px;
+            display: inline-block;
+        }
+
+        /* Ajoutez ces styles pour les nouvelles images de la section "sacs" */
+        .new-sac-images-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .new-sac-images-container img {
+            max-width: 30%; /* Ajustez la largeur selon vos préférences */
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bannière pour la page d'accueil -->
+    <div id="home-banner">
+        <h1>JACQUEMUS</h1>
+    </div>
+
+    <!-- Onglets de navigation -->
+    <div class="tab-container">
+        <button onclick="openTab('home')">Accueil</button>
+        <button onclick="openTab('collections')">Collections</button>
+        <button onclick="openTab('sacs')">Sacs</button>
+        <button onclick="openTab('nos-engagements')">Nos Engagements</button>
+    </div>
+
+    <!-- Contenu de l'onglet Accueil -->
+    <div id="home" class="tab-content" style="display: block;">
+        <img src="https://i.pinimg.com/564x/03/99/10/039910aa8a700233f1601e8d161b8ead.jpg" alt="Jacquemus Image d'accueil">
+        <p>Entrez dans le monde extraordinaire de Jacquemus, où l'art rencontre la mode et l'innovation ne connaît aucune limite...</p>
+
+        <!-- Ajout d'images de produits -->
+        <div class="product-images">
+  
+            <img src="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwdf599e53/23H213BA007-3066-180_13.jpg?q=100" alt="Image 1 de Jacquemus">
+            <img src="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw7c4657ef/23H216JS207-2480-850_13_main.jpg?q=100" alt="Image 2 de Jacquemus">
+            <img src="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2ed95081/24E226AC435-5007-950_17.jpg?q=100" alt="Image 3 de Jacquemus">
+        </div>
+    </div>
+
+    <div id="collections" class="tab-content" style="display: none;">
+    <p>Découvrez nos collections soigneusement sélectionnées qui marient harmonieusement esthétique contemporaine et touche d'extraordinaire...</p>
+
+  
+
+        <!-- Ajout des nouvelles images de la section "collections" -->
+        <div class="new-images-container">
+            <img src="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw4b9ce0ad/24E245SH084-1594-1GN_27.jpg?sw=881&sh=1100&q=100" alt="Nouvelle Image 1 de Jacquemus">
+            <img src="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw33143154/23H213BA002-3000-100_13.jpg?q=100" alt="Nouvelle Image 2 de Jacquemus">
+            <img src="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dwb9133c35/24E235FO052-4057-750_17.jpg?q=100" alt="Nouvelle Image 3 de Jacquemus">
+        </div>
+    </div>
+
+    <!-- Contenu de l'onglet Sacs -->
+    <div id="sacs" class="tab-content" style="display: none;">
+        <p>Explorez notre sélection exquise de sacs, où le style rencontre la fonctionnalité...</p>
+
+        <!-- Ajout des nouvelles images de la section "sacs" -->
+        <div class="new-sac-images-container">
+            <img src="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw32f11253/23H231BA057-3000-855_13.jpg?q=100" alt="Nouvelle Image 4 de Jacquemus">
+            <img src="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw2bd814f1/23H223BA044-3060-121_13_main.jpg?q=100" alt="Nouvelle Image 5 de Jacquemus">
+            <img src="https://www.jacquemus.com/dw/image/v2/BJFJ_PRD/on/demandware.static/-/Sites-master-jacquemus/default/dw0a8e0e7b/23H233BA326-3072-811_13_main.jpg?q=100" alt="Nouvelle Image 6 de Jacquemus">
+        </div>
+    </div>
+
+    <!-- Contenu de l'onglet Nos Engagements -->
+<div id="nos-engagements" class="tab-content" style="display: none;">
+    <div class="engagements-container">
+        <h2>Nos Engagements envers la Durabilité</h2>
+
+        <p>JACQUEMUS s'engage à anticiper et à s'adapter à la réglementation de l'EU Passport qui entrera en vigueur en 2030. Cette initiative ambitieuse vise à renforcer les normes de durabilité et à minimiser l'impact environnemental de l'industrie de la mode.</p>
+
+        <p><em>En tant que partenaire de JACQUEMUS, vous jouez un rôle essentiel dans la réalisation de ces engagements. Nous comptons sur votre soutien continu et votre collaboration pour atteindre ensemble ces objectifs ambitieux.</em></p>
+
+        <div class="engagement-list">
+            <h3>Nos Principaux Engagements :</h3>
+            <ul>
+                <li><strong>Transparence :</strong> Nous travaillons à accroître la transparence de notre chaîne d'approvisionnement, en fournissant des informations détaillées sur l'origine de nos matériaux et les conditions de fabrication de nos produits.</li>
+                
+                <li><strong>Responsabilité environnementale :</strong> Nous investissons dans des pratiques de production durables et des matériaux éco-responsables pour réduire notre empreinte carbone et minimiser l'utilisation de ressources non renouvelables.</li>
+                
+                <li><strong>Innovation continue :</strong> Nous restons à l'avant-garde des nouvelles technologies et des méthodes de production éthiques pour répondre aux normes en constante évolution et dépasser les attentes de nos clients en matière de durabilité.</li>
+            </ul>
+        </div>
+
+        <p>Nous sommes convaincus que cette transition vers l'EU Passport sera bénéfique tant pour notre entreprise que pour l'environnement. Nous continuerons à collaborer étroitement avec nos partenaires pour garantir une mise en œuvre réussie de ces engagements.</p>
+    </div>
+</div>
+
+
+    <!-- JavaScript pour gérer le changement d'onglet -->
+    <script src="script.js"></script>
+</body>
+</html>
